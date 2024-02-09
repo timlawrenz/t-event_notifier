@@ -4,7 +4,7 @@ require File.expand_path('lib/t/event_notifier/version', __dir__)
 
 Gem::Specification.new do |spec|
   spec.name = 't-event_notifier'
-  spec.version = GL::Command::VERSION
+  spec.version = T::EventNotifier::VERSION
   spec.authors = ['Tim Lawrenz']
   spec.summary = 'Central Place to distribute events'
   spec.homepage = 'https://github.com/timlawrenz/t-event_notifier'
@@ -31,6 +31,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activerecord', '>= 7.1.3'
   spec.add_dependency 'activesupport', '>= 7.1.3'
   spec.add_dependency 'railties', '>= 7.1.3'
+
+  spec.add_development_dependency 'rspec-rails'
 
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
