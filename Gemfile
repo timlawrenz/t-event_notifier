@@ -8,6 +8,7 @@ end
 
 group :development, :test do
   gem 'factory_bot', '~> 6.2.1'
+  gem 'gl-command'
   gem 'guard-rspec'
   gem 'rails', '~> 7.1.3'
   gem 'rake', '~> 13.0'
