@@ -7,13 +7,10 @@ group :development do
 end
 
 group :development, :test do
-  gem 'factory_bot', '~> 6.2.1'
   gem 'gl-command'
   gem 'guard-rspec'
-  gem 'rails', '~> 7.1.3'
   gem 'rake', '~> 13.0'
   gem 'rspec', '~> 3.6'
-  gem 'rspec-rails', '~> 5.1.2'
   gem 'rubocop', '~> 1.30'
   gem 'rubocop-performance', '~> 1.14'
   gem 'rubocop-rails', '~> 2.15.2'
