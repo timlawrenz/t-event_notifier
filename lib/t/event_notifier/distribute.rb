@@ -2,19 +2,18 @@
 
 module T
   module EventNotifier
-    class Log
+    class Distribute
       include GL::Command
       include GL::Contract
-      include GL::Chain
 
       requires :event
       allows :message
       allows :object
-      allows :identifier
+      requires :identifier
 
-      chain SetIdentifier
-      chain LogEvent
-      chain Distribute
+      def call
+
+      end
     end
   end
 end

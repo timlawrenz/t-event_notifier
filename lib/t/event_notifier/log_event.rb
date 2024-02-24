@@ -2,19 +2,18 @@
 
 module T
   module EventNotifier
-    class Log
+    class LogEvent
       include GL::Command
       include GL::Contract
-      include GL::Chain
 
       requires :event
       allows :message
       allows :object
       allows :identifier
 
-      chain SetIdentifier
-      chain LogEvent
-      chain Distribute
+      def call
+        Rails.logger.info([event, message, object, identifier].compact.join(' '))
+      end
     end
   end
 end
